@@ -3,6 +3,7 @@ import csv
 students = []
 
 with open("home.csv") as file:
+    # reader retunrs a list
     reader = csv.reader(file)
     for name, home in reader:
         students.append({"name": name, "home":home})
